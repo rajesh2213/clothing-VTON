@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results for</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <link rel="stylesheet" href="../style.css ">
+    <link rel="stylesheet" href="../search.css">
+
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+
+    <section class="search-results">
+
+        <h2 class="heading">search results for <span id="search-key"></span></h2>
+        <section class="card-container"></section>
+
+    </section>
+
+    <footer></footer>
+
+    <script src="../nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100){
+                        // $(".navbar").css({"opacity" : "1"})
+                       // $(".navbar").css({"background-color" : "rgb(250, 249, 249,1)"})
+                        $(".navbar").css({"background-color" : "rgb(33, 31, 27,1)"})
+                    }else {
+                        //  $(".navbar").css({"opacity" : ""})
+                        $(".navbar").css({"background-color" : "rgb(33, 31, 27,1)"})
+                         
+                     }
+                
+                })
+            })
+    </script>
+    <script src="../footer.js"></script>
+    <script src="../home.js"></script>
+    <script src="../search.js"></script>
+    <script src="../nav.js"></script>
+</body>
+
+</html>
